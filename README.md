@@ -78,9 +78,6 @@ The app uses the following Python packages (listed in `requirements.txt`):
 - **File name mismatch**: If the app fails to start, confirm whether the main file is `SSE.py` or `app.py` and update the `Dockerfile` accordingly.
 - **Dependency issues**: Ensure all dependencies in `requirements.txt` are installed correctly during the Docker build.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 - [CoinGecko API](https://www.coingecko.com/en/api) for providing free Bitcoin price data.
 - [Flask](https://flask.palletsprojects.com/) for the lightweight web framework.
