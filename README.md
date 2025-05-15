@@ -1,5 +1,5 @@
 # Simple_SSE_Server
-# Bitcoin Price Tracker
+## Bitcoin Price Tracker
 
 This is a simple Flask-based web application that streams real-time Bitcoin prices using Server-Sent Events (SSE). The app fetches the current Bitcoin price in USD from the [CoinGecko API](https://www.coingecko.com/en/api) every 60 seconds and displays it on a webpage with a timestamp.
 
@@ -53,12 +53,6 @@ Simple_SSE_Server/
 └── README.md         # This file
 ```
 
-**Note**: If the main application file is `app.py` instead of `SSE.py`, the `Dockerfile` is already configured for `app.py`. If using `SSE.py`, update the `Dockerfile` to:
-```dockerfile
-COPY SSE.py .
-CMD ["python", "SSE.py"]
-```
-
 ## Dependencies
 The app uses the following Python packages (listed in `requirements.txt`):
 - `Flask==2.0.1`: Web framework for the server and SSE.
@@ -80,14 +74,6 @@ The app uses the following Python packages (listed in `requirements.txt`):
 - **API errors**: Verify internet connectivity, as the app requires access to the CoinGecko API.
 - **File name mismatch**: If the app fails to start, confirm whether the main file is `SSE.py` or `app.py` and update the `Dockerfile` accordingly.
 - **Dependency issues**: Ensure all dependencies in `requirements.txt` are installed correctly during the Docker build.
-
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit (`git commit -m "Add feature"`).
-4. Push to your fork (`git push origin feature-branch`).
-5. Open a pull request.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
