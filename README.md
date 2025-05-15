@@ -1,7 +1,10 @@
 # Simple_SSE_Server
-## Bitcoin Price Tracker
+### Bitcoin Price Tracker
 
 This is a simple Flask-based web application that streams real-time Bitcoin prices using Server-Sent Events (SSE). The app fetches the current Bitcoin price in USD from the [CoinGecko API](https://www.coingecko.com/en/api) every 60 seconds and displays it on a webpage with a timestamp.
+
+![brave_screenshot_sse-server-43ca52c09181 hosted ghaymah systems](https://github.com/user-attachments/assets/4f8858e8-bac4-44d1-8234-e29b0e3e3e10)
+
 
 The application is containerized using Docker, making it easy to deploy and run.
 
